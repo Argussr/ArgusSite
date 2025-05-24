@@ -6,7 +6,7 @@
   "homepage": "https://argussr.github.io/ArgusSite/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/repositorio/",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "npm run build && npx gh-pages -d dist"
