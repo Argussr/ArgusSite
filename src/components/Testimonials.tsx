@@ -45,7 +45,7 @@ const Testimonials: React.FC = () => {
     }, 5000);
     
     return () => clearInterval(interval);
-  }, [current, autoplay]);
+  }, [current, autoplay, next]);
 
   return (
     <section id="depoimentos" className="py-20 bg-white">
