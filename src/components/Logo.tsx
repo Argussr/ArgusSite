@@ -9,7 +9,7 @@ const Logo: React.FC<LogoProps> = ({ size = 80 }) => {
     <div className="relative flex items-center justify-center">
       <div className="rounded-full bg-accent p-0">
         <img
-          src="../assets/logo.png" // Caminho relativo para Vite
+          src="/assets/logo.png" // Caminho relativo para Vite
           alt="Logo"
           width={size * 1}
           height={size * 1}
