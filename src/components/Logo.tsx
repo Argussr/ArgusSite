@@ -1,20 +1,18 @@
 import React from 'react';
-import Image from 'next/image'; // Importe o componente Image
 
 interface LogoProps {
   size?: number;
 }
 
-const Logo: React.FC<LogoProps> = ({ size = 48 }) => {
+const Logo: React.FC<LogoProps> = ({ size = 80 }) => {
   return (
     <div className="relative flex items-center justify-center">
-      <div className="rounded-full bg-accent p-2">
-        {/* Substitua 'path/to/your/image' pelo caminho da sua imagem */}
-        <Image 
-          src="assets/logo.png" // Caminho da imagem
+      <div className="rounded-full bg-accent p-0">
+        <img
+          src="public/assets/logo.png" // Caminho relativo para Vite
           alt="Logo"
-          width={size * 0.6} 
-          height={size * 0.6}
+          width={size * 1}
+          height={size * 1}
           className="text-white"
         />
       </div>

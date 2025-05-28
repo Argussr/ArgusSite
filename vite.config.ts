@@ -8,8 +8,4 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  server: {
-    port: 5173,
-    cors: true,  // Habilita CORS no ambiente de desenvolvimento
-  },
 });

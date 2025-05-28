@@ -215,26 +215,26 @@ const Contact: React.FC = () => {
               
               <div className="space-y-3">
                 <div className="flex justify-between border-b border-gray-200 pb-2">
-                  <span className="text-secondary font-medium">Segunda a Sexta</span>
+                  <span className="text-secondary font-medium">Segunda a Quinta</span>
                   <span className="text-primary font-bold">8:00 - 18:00</span>
                 </div>
                 <div className="flex justify-between border-b border-gray-200 pb-2">
-                  <span className="text-secondary font-medium">Sábado</span>
-                  <span className="text-primary font-bold">9:00 - 13:00</span>
+                  <span className="text-secondary font-medium">Sexta</span>
+                  <span className="text-primary font-bold">8:00 - 16:00</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-secondary font-medium">Domingo</span>
+                  <span className="text-secondary font-medium">Sábado e Domingo</span>
                   <span className="text-primary font-bold">Fechado</span>
                 </div>
               </div>
               
-              <div className="mt-6">
+              {/* <div className="mt-6">
                 <h4 className="font-bold text-primary mb-2">Suporte 24/7</h4>
                 <p className="text-secondary">
                   Nosso suporte técnico está disponível 24 horas por dia, 
                   7 dias por semana para emergências.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
