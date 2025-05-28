@@ -26,15 +26,15 @@ const Header: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <div className="flex items-center">
+        <a className="flex items-center no-underline">
           <Logo size={isScrolled ? 40 : 48} />
           <div className={`ml-3 font-bold text-xl ${isScrolled ? 'text-primary' : 'text-white'}`}>
             ARGUS
-            <span className={`block text-xs font-medium ${isScrolled ? 'text-secondary' : 'text-gray-200'}`}>
+            {/* <span className={`block text-xs font-medium ${isScrolled ? 'text-secondary' : 'text-gray-200'}`}>
               Soluções em Rastreamento
-            </span>
+            </span> */}
           </div>
-        </div>
+        </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
