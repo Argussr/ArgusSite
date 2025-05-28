@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#name-logo{
+    letter-spacing: -2.5px;
+    padding-left: 10px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.991);
+    font-family: poppins, sans-serif;
+    font-size: 25px;
+}

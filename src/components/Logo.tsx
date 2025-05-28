@@ -4,7 +4,7 @@ interface LogoProps {
   size?: number;
 }
 
-const Logo: React.FC<LogoProps> = ({ size = 80 }) => {
+const Logo: React.FC<LogoProps> = ({ size = 90 }) => {
   return (
     <div className="relative flex items-center justify-center">
       <div className="rounded-full bg-accent p-0">

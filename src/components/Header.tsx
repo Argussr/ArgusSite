@@ -20,15 +20,15 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <header 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
-      }`}
+    <header
+      id='#inicio'
+      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
+        }`}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
-        <a className="flex items-center no-underline">
-          <Logo size={isScrolled ? 40 : 48} />
-          <div className={`ml-3 font-bold text-xl ${isScrolled ? 'text-primary' : 'text-white'}`}>
+      <div className="container mx-auto px-4 flex justify-between items-center" >
+        <a href='inicio' className="flex items-center no-underline px-2 ">
+          <Logo size={isScrolled ? 50 : 50} />
+          <div id='name-logo' className={`font-bold text-xl ${isScrolled ? 'text-primary' : 'text-white'}`}>
             ARGUS
             {/* <span className={`block text-xs font-medium ${isScrolled ? 'text-secondary' : 'text-gray-200'}`}>
               Soluções em Rastreamento
@@ -39,12 +39,11 @@ const Header: React.FC = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           {['Início', 'Sobre', 'Soluções', 'Benefícios', 'Depoimentos', 'Contato'].map((item) => (
-            <a 
-              key={item} 
-              href={`#${item.toLowerCase()}`} 
-              className={`font-medium text-sm hover:text-accent transition-colors ${
-                isScrolled ? 'text-secondary' : 'text-white'
-              }`}
+            <a
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              className={`font-medium text-sm hover:text-accent transition-colors ${isScrolled ? 'text-secondary' : 'text-white'
+                }`}
             >
               {item}
             </a>
@@ -55,8 +54,8 @@ const Header: React.FC = () => {
         </nav>
 
         {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden text-primary" 
+        <button
+          className="md:hidden text-primary"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -67,9 +66,9 @@ const Header: React.FC = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white absolute top-full left-0 w-full shadow-lg py-4 px-4 flex flex-col space-y-3">
           {['Início', 'Sobre', 'Soluções', 'Benefícios', 'Depoimentos', 'Contato'].map((item) => (
-            <a 
-              key={item} 
-              href={`#${item.toLowerCase()}`} 
+            <a
+              key={item}
+              href={`#${item.toLowerCase()}`}
               className="text-secondary hover:text-accent py-2 transition-colors text-sm font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
