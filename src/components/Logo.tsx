@@ -7,7 +7,7 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ size = 90 }) => {
   return (
     <div className="relative flex items-center justify-center">
-      <div className="rounded-full bg-accent p-0">
+      <div className="rounded-full bg-primary p-0">
         <img
           src="../assets/logo.png" // Caminho relativo para Vite
           alt="Logo"
