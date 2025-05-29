@@ -36,11 +36,11 @@ const Benefits: React.FC = () => {
   ];
 
   return (
-    <section id="benefícios" className="py-20 bg-primary text-white">
+    <section id="benefícios" className="py-20 bg-primary-dark text-accent">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Benefícios</h2>
-          <div className="w-16 h-1 bg-accent mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-accent mx-auto mb-6 rounded-sm"></div>
           <p className="max-w-2xl mx-auto text-gray-200">
             Descubra como nossas soluções de rastreamento podem transformar 
             sua operação, trazendo mais segurança, eficiência e economia.
@@ -51,9 +51,9 @@ const Benefits: React.FC = () => {
           {benefits.map((benefit, index) => (
             <div 
               key={index} 
-              className="bg-primary-dark p-6 rounded-lg border border-gray-700 hover:border-accent transition-all transform hover:-translate-y-2 hover:shadow-lg"
+              className="bg-primary-light p-6 rounded-lg border border-gray-700 hover:border-accent transition-all transform hover:-translate-y-2 hover:shadow-lg"
             >
-              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary-light mb-4 mx-auto">
+              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-secondary mb-4 mx-auto">
                 {benefit.icon}
               </div>
               <h3 className="text-xl font-bold mb-3 text-center">{benefit.title}</h3>
@@ -66,7 +66,7 @@ const Benefits: React.FC = () => {
           <h3 className="text-2xl font-bold mb-6">
             Pronto para transformar a gestão da sua frota?
           </h3>
-          <button className="bg-accent hover:bg-accent/90 text-white py-3 px-8 rounded-md transition-all transform hover:scale-105 font-medium inline-flex items-center">
+          <button className="bg-secondary hover:bg-accent/90 text-accent hover:text-primary py-3 px-8 rounded-md transition-all transform hover:scale-105 font-medium inline-flex items-center">
             Solicitar Demonstração
           </button>
         </div>

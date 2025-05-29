@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
     >
       <div className="container mx-auto px-4 py-16">
         <div className="md:max-w-2xl lg:max-w-3xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-accent mb-4 leading-tight">
             Tecnologia e Segurança para Monitorar o que é Seu!
           </h1>
           <p className="text-xl text-gray-200 mb-8 leading-relaxed">
@@ -22,11 +22,11 @@ const Hero: React.FC = () => {
             Nossa plataforma oferece o monitoramento avançado que sua empresa precisa.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-accent hover:bg-accent/90 text-white py-3 px-6 rounded-md transition-all transform hover:scale-105 font-medium flex items-center justify-center">
+            <button className="bg-primary hover:bg-accent/90 text-accent hover:text-secondary/90 py-3 px-6 rounded-md transition-all transform hover:scale-105 font-medium flex items-center justify-center">
               Solicitar Demonstração
               <ArrowRight size={18} className="ml-2" />
             </button>
-            <button className="border-2 border-white text-white py-3 px-6 rounded-md transition-all hover:bg-white/10 font-medium">
+            <button className="border-2 border-accent text-accent py-3 px-6 rounded-md transition-all hover:bg-accent/10 hover:border-primary hover:text-primary font-medium">
               Conheça a Plataforma
             </button>
           </div>
@@ -36,10 +36,10 @@ const Hero: React.FC = () => {
       <div className="absolute bottom-10 left-0 right-0 flex justify-center">
         <a 
           href="#sobre" 
-          className="animate-bounce bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors"
+          className="animate-bounce bg-accent/10 p-2 rounded-full hover:bg-accent/20  transition-colors"
         >
           <svg 
-            className="w-6 h-6 text-white" 
+            className="w-6 h-6 text-accent hover:text-primary" 
             fill="none" 
             stroke="currentColor" 
             viewBox="0 0 24 24" 

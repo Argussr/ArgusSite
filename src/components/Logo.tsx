@@ -13,7 +13,7 @@ const Logo: React.FC<LogoProps> = ({ size = 90 }) => {
           alt="Logo"
           width={size * 1}
           height={size * 1}
-          className="text-white"
+          className="text-accent"
         />
       </div>
       <div className="absolute -top-1 -right-1 w-3 h-3 bg-primary rounded-full animate-pulse" />

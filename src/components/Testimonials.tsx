@@ -39,36 +39,36 @@ const Testimonials: React.FC = () => {
 
   useEffect(() => {
     if (!autoplay) return;
-    
+
     const interval = setInterval(() => {
       next();
     }, 5000);
-    
+
     return () => clearInterval(interval);
   }, [current, autoplay, next]);
 
   return (
-    <section id="depoimentos" className="py-20 bg-white">
+    <section id="depoimentos" className="py-20 bg-accent-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-primary mb-4">O Que Nossos Clientes Dizem</h2>
-          <div className="w-16 h-1 bg-accent mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-secondary mx-auto mb-6 rounded-lg"></div>
           <p className="text-secondary max-w-2xl mx-auto">
-            A satisfação dos nossos clientes é a nossa maior conquista. 
+            A satisfação dos nossos clientes é a nossa maior conquista.
             Confira alguns depoimentos de empresas que já utilizam nossas soluções.
           </p>
         </div>
 
-        <div className="relative max-w-4xl mx-auto" 
+        <div className="relative max-w-4xl mx-auto"
           onMouseEnter={() => setAutoplay(false)}
           onMouseLeave={() => setAutoplay(true)}
         >
-          <div className="relative bg-gray-50 rounded-lg shadow-lg p-8 md:p-12">
+          <div className="relative bg-accent rounded-lg shadow-lg p-8 md:p-12">
             <div className="flex flex-col md:flex-row gap-6 items-center">
-              <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden flex-shrink-0 border-4 border-accent">
-                <img 
-                  src={testimonials[current].image} 
-                  alt={testimonials[current].name} 
+              <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden flex-shrink-0 border-4 border-primary-light">
+                <img
+                  src={testimonials[current].image}
+                  alt={testimonials[current].name}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -87,29 +87,29 @@ const Testimonials: React.FC = () => {
             </div>
 
             {/* Quote mark */}
-            <div className="absolute top-6 right-6 text-gray-200 opacity-50">
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                width="48" 
-                height="48" 
-                viewBox="0 0 24 24" 
+            <div className="absolute top-6 right-6 text-secondary-light">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
                 fill="currentColor"
               >
-                <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
+                <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
               </svg>
             </div>
           </div>
 
           {/* Navigation buttons */}
-          <button 
+          <button
             onClick={prev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-white shadow-md rounded-full p-2 text-primary hover:text-accent transition-colors"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-secondary-light hover:bg-secondary shadow-md rounded-full p-2 text-primary hover:text-accent-light transition-colors"
           >
             <ChevronLeft size={24} />
           </button>
-          <button 
+          <button
             onClick={next}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 bg-white shadow-md rounded-full p-2 text-primary hover:text-accent transition-colors"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 bg-secondary-light hover:bg-secondary shadow-md rounded-full p-2 text-primary hover:text-accent-light transition-colors"
           >
             <ChevronRight size={24} />
           </button>
@@ -120,23 +120,37 @@ const Testimonials: React.FC = () => {
               <button
                 key={index}
                 onClick={() => setCurrent(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${
-                  index === current ? 'bg-accent' : 'bg-gray-300'
-                }`}
+                className={`w-3 h-3 rounded-full transition-colors ${index === current ? 'bg-secondary' : 'bg-primary-light'
+                  }`}
               />
             ))}
           </div>
         </div>
 
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center opacity-70">
+        {/* <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center opacity-70">
           {['Empresa A', 'Empresa B', 'Empresa C', 'Empresa D'].map((company, index) => (
             <div key={index} className="text-center">
               <div className="h-16 flex items-center justify-center">
-                <div className="text-2xl font-bold text-gray-400">{company}</div>
+                <div className="text-2xl font-bold text-secondary">{company}</div>
+              </div>
+            </div>
+          ))}
+        </div> */}
+        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 items-center justify-center opacity-90">
+          {[
+            '/assets/logo-fic-02.png',
+            '/assets/logo-fic-01.png',
+            '/assets/logo-fic-03.png',
+            '/assets/logo-fic-04.png'
+          ].map((logo, index) => (
+            <div key={index} className="flex items-center justify-center ">
+              <div className='flex items-center border-2 border-primary overflow-hidden rounded-lg shadow-lg'>
+              <img src={logo} alt={`Empresa ${index + 1}`} className="h-16 object-cover" />
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

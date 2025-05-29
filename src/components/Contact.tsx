@@ -68,11 +68,11 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contato" className="py-20 bg-gray-50">
+    <section id="contato" className="py-20 bg-accent">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-primary mb-4">Entre em Contato</h2>
-          <div className="w-16 h-1 bg-accent mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-secondary-light rounded-lg mx-auto mb-6"></div>
           <p className="text-secondary max-w-2xl mx-auto">
             Estamos prontos para atender às suas necessidades de rastreamento veicular. 
             Entre em contato conosco para uma demonstração ou para tirar suas dúvidas.
@@ -80,7 +80,7 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <div className="bg-white rounded-lg shadow-md p-8">
+          <div className="bg-accent-light rounded-lg shadow-md p-8">
             <h3 className="text-2xl font-bold text-primary mb-6">Envie uma Mensagem</h3>
             
             {submitted ? (
@@ -100,11 +100,11 @@ const Contact: React.FC = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary ${
-                    errors.name ? 'border-red-500' : 'border-gray-300'
+                  className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 bg-accent focus:ring-primary ${
+                    errors.name ? 'border-primary-light' : 'border-primary-dark'
                   }`}
                 />
-                {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
+                {errors.name && <p className="text-primary-light text-xs mt-1">{errors.name}</p>}
               </div>
               
               <div className="mb-4">
@@ -117,11 +117,11 @@ const Contact: React.FC = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary ${
-                    errors.email ? 'border-red-500' : 'border-gray-300'
+                  className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 bg-accent focus:ring-primary ${
+                    errors.email ? 'border-primary-light' : 'border-primary-dark'
                   }`}
                 />
-                {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
+                {errors.email && <p className="text-primary-light text-xs mt-1">{errors.email}</p>}
               </div>
               
               <div className="mb-4">
@@ -134,11 +134,11 @@ const Contact: React.FC = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary ${
-                    errors.phone ? 'border-red-500' : 'border-gray-300'
+                  className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 bg-accent focus:ring-primary ${
+                    errors.phone ? 'border-primary-light' : 'border-primary-dark'
                   }`}
                 />
-                {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
+                {errors.phone && <p className="text-primary-light text-xs mt-1">{errors.phone}</p>}
               </div>
               
               <div className="mb-6">
@@ -151,16 +151,16 @@ const Contact: React.FC = () => {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary ${
-                    errors.message ? 'border-red-500' : 'border-gray-300'
+                  className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 bg-accent  focus:ring-primary ${
+                    errors.message ? 'border-primary-light' : 'border-primary-dark'
                   }`}
                 ></textarea>
-                {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message}</p>}
+                {errors.message && <p className="text-primary-light text-xs mt-1">{errors.message}</p>}
               </div>
               
               <button 
                 type="submit"
-                className="bg-primary hover:bg-primary/90 text-white py-3 px-6 rounded-md transition-all font-medium flex items-center justify-center"
+                className="bg-primary hover:bg-primary-light text-accent hover:text-secondary py-3 px-6 rounded-md transition-all font-medium flex items-center justify-center"
               >
                 Enviar Mensagem
                 <Send size={18} className="ml-2" />
@@ -169,39 +169,39 @@ const Contact: React.FC = () => {
           </div>
           
           <div className="flex flex-col">
-            <div className="bg-primary text-white rounded-lg shadow-md p-8 mb-6">
+            <div className="bg-primary text-accent rounded-lg shadow-md p-3 mb-6">
               <h3 className="text-2xl font-bold mb-6">Informações de Contato</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="bg-accent/20 p-3 rounded-full mr-4">
-                    <Phone className="w-6 h-6 text-accent" />
+                  <div className="bg-accent/40 p-3 rounded-full mr-4">
+                    <Phone className="w-6 h-6 text-secondary-light" />
                   </div>
                   <div>
-                    <h4 className="font-bold">Telefone</h4>
-                    <p className="text-gray-200">(11) 5555-5555</p>
-                    <p className="text-gray-200">(11) 98888-8888</p>
+                    <h4 className="font-bold text-secondary">Telefone</h4>
+                    <p className="text-accent-light">(11) 5555-5555</p>
+                    <p className="text-accent-light">(11) 98888-8888</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-accent/20 p-3 rounded-full mr-4">
-                    <Mail className="w-6 h-6 text-accent" />
+                  <div className="bg-accent/40 p-3 rounded-full mr-4">
+                    <Mail className="w-6 h-6 text-secondary-light" />
                   </div>
                   <div>
-                    <h4 className="font-bold">Email</h4>
-                    <p className="text-gray-200">contato@argus.com.br</p>
-                    <p className="text-gray-200">suporte@argus.com.br</p>
+                    <h4 className="font-bold text-secondary">Email</h4>
+                    <p className="text-accent-light">contato@argus.com.br</p>
+                    <p className="text-accent-light">suporte@argus.com.br</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-accent/20 p-3 rounded-full mr-4">
-                    <MapPin className="w-6 h-6 text-accent" />
+                  <div className="bg-accent/40 p-3 rounded-full mr-4 ">
+                    <MapPin className="w-6 h-6 text-secondary-light" />
                   </div>
                   <div>
-                    <h4 className="font-bold">Endereço</h4>
-                    <p className="text-gray-200">
+                    <h4 className="font-bold text-secondary">Endereço</h4>
+                    <p className="text-accent-light">
                       Av. Paulista, 1000 - Bela Vista<br />
                       São Paulo - SP, 01310-100
                     </p>
@@ -210,15 +210,15 @@ const Contact: React.FC = () => {
               </div>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-8 flex-grow">
+            <div className="bg-accent-light rounded-lg shadow-md p-8 flex-grow">
               <h3 className="text-2xl font-bold text-primary mb-6">Horário de Funcionamento</h3>
               
               <div className="space-y-3">
-                <div className="flex justify-between border-b border-gray-200 pb-2">
+                <div className="flex justify-between border-b border-primary-light pb-2">
                   <span className="text-secondary font-medium">Segunda a Quinta</span>
                   <span className="text-primary font-bold">8:00 - 18:00</span>
                 </div>
-                <div className="flex justify-between border-b border-gray-200 pb-2">
+                <div className="flex justify-between border-b border-primary-light pb-2">
                   <span className="text-secondary font-medium">Sexta</span>
                   <span className="text-primary font-bold">8:00 - 16:00</span>
                 </div>
