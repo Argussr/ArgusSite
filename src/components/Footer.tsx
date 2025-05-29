@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center mb-4">
+            <a href='#início' className="flex items-center no-underline mb-4">
               <Logo size={40} />
               <div id='name-logo' className="font-bold text-xl">
                 ARGUS
@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
                   Soluções em Rastreamento
                 </span> */}
               </div>
-            </div>
+            </a>
             <p className="text-accent mb-6">
               Fornecemos soluções avançadas de rastreamento para veículos e cargas, 
               garantindo segurança e eficiência para sua empresa.

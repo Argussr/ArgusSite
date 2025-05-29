@@ -21,12 +21,11 @@ const Header: React.FC = () => {
 
   return (
     <header
-      id='#inicio'
       className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-accent shadow-md py-2' : 'bg-transparent py-4'
         }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center" >
-        <a href='inicio' className="flex items-center no-underline px-2 ">
+        <a href='#início' className="flex items-center no-underline px-2 ">
           <Logo size={isScrolled ? 50 : 50} />
           <div id='name-logo' className={`font-bold text-xl ${isScrolled ? 'text-secondary' : 'text-accent'}`}>
             ARGUS
