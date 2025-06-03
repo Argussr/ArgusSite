@@ -37,7 +37,7 @@ const Header: React.FC = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {['Início', 'Sobre', 'Soluções', 'Benefícios', 'Depoimentos', 'Contato'].map((item) => (
+          {['Início', 'Sobre', 'Soluções', 'Benefícios', 'Depoimentos', 'FAQ', 'Contato'].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -47,9 +47,9 @@ const Header: React.FC = () => {
               {item}
             </a>
           ))}
-          <button className="bg-primary hover:bg-primary-dark/90 hover:text-secondary text-accent py-2 px-4 rounded-md transition-colors text-sm font-medium">
+          <a href='#contato' className="bg-primary hover:bg-primary-dark/90 hover:text-secondary text-accent py-2 px-4 rounded-md transition-colors text-sm font-medium cursor-pointer decoration-none">
             Solicitar Demonstração
-          </button>
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -64,7 +64,7 @@ const Header: React.FC = () => {
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden bg-accent absolute top-full left-0 w-full shadow-lg py-4 px-4 flex flex-col space-y-3">
-          {['Início', 'Sobre', 'Soluções', 'Benefícios', 'Depoimentos', 'Contato'].map((item) => (
+          {['Início', 'Sobre', 'Soluções', 'Benefícios', 'Depoimentos','FAQ' , 'Contato'].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -74,9 +74,9 @@ const Header: React.FC = () => {
               {item}
             </a>
           ))}
-          <button className="bg-primary-dark hover:bg-primary/90 hover:text-secondary text-accent py-2 px-4 rounded-md transition-colors text-sm font-medium w-full mt-2">
+          <a href='#contato' className="bg-primary-dark hover:bg-primary/90 hover:text-secondary text-accent py-2 px-4 rounded-md transition-colors text-sm font-medium w-full mt-2">
             Solicitar Demonstração
-          </button>
+          </a>
         </div>
       )}
     </header>

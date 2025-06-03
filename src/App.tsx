@@ -5,6 +5,7 @@ import About from './components/About';
 import Solutions from './components/Solutions';
 import Benefits from './components/Benefits';
 import Testimonials from './components/Testimonials';
+import Faq from './components/Faq';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './index.css';
@@ -18,6 +19,7 @@ function App() {
       <Solutions />
       <Benefits />
       <Testimonials />
+      <Faq />
       <Contact />
       <Footer />
     </div>
