@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
               </div>
             </a>
             <p className="text-accent mb-6">
-              Fornecemos soluções avançadas de rastreamento para veículos e cargas, 
+              Fornecemos soluções avançadas de rastreamento para veículos e cargas,
               garantindo segurança e eficiência para sua empresa.
             </p>
             <div className="flex space-x-4">
@@ -36,14 +36,14 @@ const Footer: React.FC = () => {
               </a>
             </div>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-bold mb-4">Links Rápidos</h3>
             <ul className="space-y-2">
               {['Início', 'Sobre', 'Soluções', 'Benefícios', 'Depoimentos', 'FAQ', 'Contato'].map((item) => (
                 <li key={item}>
-                  <a 
-                    href={`#${item.toLowerCase()}`} 
+                  <a
+                    href={`#${item.toLowerCase()}`}
                     className="text-accent-light hover:text-primary transition-colors flex items-center"
                   >
                     <ChevronRight size={16} className="mr-1" />
@@ -53,21 +53,21 @@ const Footer: React.FC = () => {
               ))}
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-bold mb-4">Soluções</h3>
             <ul className="space-y-2">
               {[
-                'Rastreamento de Veículos', 
-                'Monitoramento de Frotas', 
-                'Gestão de Motoristas', 
-                'Relatórios Personalizados', 
-                'Alertas em Tempo Real', 
+                'Rastreamento de Veículos',
+                'Monitoramento de Frotas',
+                'Gestão de Motoristas',
+                'Relatórios Personalizados',
+                'Alertas em Tempo Real',
                 'Aplicativo Móvel'
               ].map((item) => (
                 <li key={item}>
-                  <a 
-                    href="#soluções" 
+                  <a
+                    href="#soluções"
                     className="text-accent-light hover:text-primary transition-colors flex items-center"
                   >
                     <ChevronRight size={16} className="mr-1" />
@@ -77,33 +77,36 @@ const Footer: React.FC = () => {
               ))}
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-bold mb-4">Entre em Contato</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin size={20} className="text-primary mr-2 mt-1 flex-shrink-0" />
                 <span className="text-accent-light">
-                  Av. Paulista, 1000 - Bela Vista<br />
-                  São Paulo - SP, 01310-100
+                  {/* Av. Paulista, 1000 - Bela Vista<br />
+                  São Paulo - SP, 01310-100 */}
+
+                  No momento não temos um endereço físico, <br />
+                  mas estamos disponíveis online para atender você!
                 </span>
               </li>
               <li className="flex items-center">
                 <span className="text-primary mr-2">✉</span>
-                <a href="mailto:contato@argus.com.br" className="text-accent-light hover:text-primary-light transition-colors">
-                  contato@argus.com.br
+                <a href="mailto:argussrastreamento@gmail.com" className="text-accent-light hover:text-primary-light transition-colors">
+                  argussrastreamento@gmail.com
                 </a>
               </li>
               <li className="flex items-center">
                 <span className="text-primary mr-2">☏</span>
-                <a href="tel:+551155555555" className="text-accent-light hover:text-primary-light transition-colors">
-                  (11) 5555-5555
+                <a href="tel:+00000" className="text-accent-light hover:text-primary-light transition-colors">
+                  (11) 00000-0000
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-primary-light/80 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-accent-light/60 text-sm text-center w-full">
             &copy; {new Date().getFullYear()} ARGUS Soluções em Rastreamento. Todos os direitos reservados.

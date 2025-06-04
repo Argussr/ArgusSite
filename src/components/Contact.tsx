@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div id='send_message' className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <div className="bg-accent-light rounded-lg shadow-md p-8">
               <h3 className="text-2xl font-bold text-primary mb-6">Envie uma Mensagem</h3>
 

@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
             Nossa plataforma oferece o monitoramento avançado que sua empresa precisa.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href='#contato' className="bg-primary hover:bg-accent/90 text-accent hover:text-secondary/90 py-3 px-6 rounded-md transition-all transform hover:scale-105 font-medium flex items-center justify-center">
+            <a href='#send_message' className="bg-primary hover:bg-accent/90 text-accent hover:text-secondary/90 py-3 px-6 rounded-md transition-all transform hover:scale-105 font-medium flex items-center justify-center">
               Solicitar Demonstração
               <ArrowRight size={18} className="ml-2" />
             </a>

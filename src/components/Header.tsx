@@ -47,7 +47,7 @@ const Header: React.FC = () => {
               {item}
             </a>
           ))}
-          <a href='#contato' className="bg-primary hover:bg-primary-dark/90 hover:text-secondary text-accent py-2 px-4 rounded-md transition-colors text-sm font-medium cursor-pointer decoration-none">
+          <a href='#send_message' className="bg-primary hover:bg-primary-dark/90 hover:text-secondary text-accent py-2 px-4 rounded-md transition-colors text-sm font-medium cursor-pointer decoration-none">
             Solicitar Demonstração
           </a>
         </nav>
@@ -74,7 +74,7 @@ const Header: React.FC = () => {
               {item}
             </a>
           ))}
-          <a href='#contato' className="bg-primary-dark hover:bg-primary/90 hover:text-secondary text-accent py-2 px-4 rounded-md transition-colors text-sm font-medium w-full mt-2">
+          <a href='#send_message' className="bg-primary-dark hover:bg-primary/90 hover:text-secondary text-accent py-2 px-4 rounded-md transition-colors text-sm font-medium w-full mt-2">
             Solicitar Demonstração
           </a>
         </div>
