@@ -81,13 +81,13 @@ export default function FaqSection() {
         }`}
     >
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-4">
           <h2 className="text-3xl font-bold text-accent mb-4 text-center">
             FAQ & Dúvidas Frequentes
           </h2>
           <div className="w-24 h-1 bg-secondary-light rounded-lg mx-auto mb-6"></div>
         </div>
-        <div className="max-w-3xl mx-auto space-y-4">
+        <div className="w-full mx-auto space-y-3">
           {faqs.map((faq, index) => {
             const isActive = activeIndex === index;
             return (
